@@ -1,156 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Details Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f7fc;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .form-container {
-            background-color: #fff;
-            width: 100%;
-            max-width: 600px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            border: 1px solid #ddd;
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            font-size: 1em;
-            color: #555;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input, select, textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1em;
-            color: #333;
-            box-sizing: border-box;
-        }
-
-        textarea {
-            resize: vertical;
-        }
-
-        .form-group button {
-            width: 100%;
-            padding: 12px;
-            font-size: 1.2em;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .form-group button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <title>My Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    header {
+      background-color: #0078D7;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #0078D7;
+      border-bottom: 2px solid #0078D7;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      background: #f4f4f9;
+      margin: 5px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #0078D7;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>BETHINA SOWMYA SRI DURGA</h1>
+  </header>
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <p>Hello! I'm a passionate web developer with a solid foundation in version control, teamwork, and Fullstack MERN development. I love creating user-friendly websites and continuously improving my skills.</p>
+    </section>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Git and GitHub</li>
+        <li>MERN Stack: MongoDB, Express, React, Node.js</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>Completed Git and GitHub certification from edX</li>
+        <li>Participated in a Fullstack MERN workshop</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <p>Gmail: thumusadha@gmail.com</p>
+      <p>Linkedin:www.linkedin.com/in/sadha-thumu-6b9b81294
 
-    <div class="form-container">
-        <h1>Personal Details Form</h1>
-       
-        <form action="#" method="POST">
-           
-            <!-- Full Name -->
-            <div class="form-group">
-                <label for="full-name">Full Name:</label>
-                <input type="text" id="full-name" name="full-name" placeholder="First Last" required>
-            </div>
-
-            <!-- Date of Birth -->
-            <div class="form-group">
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob" required>
-            </div>
-
-            <!-- Gender -->
-            <div class="form-group">
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender" required>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="non-binary">Non-binary</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-
-            <!-- PAN Card Number -->
-            <div class="form-group">
-                <label for="pan-card">PAN Card Number:</label>
-                <input type="text" id="pan-card" name="pan-card" placeholder="XXXX-XXXX-XXXX" required>
-            </div>
-
-            <!-- Ration Card Number -->
-            <div class="form-group">
-                <label for="ration-card">Ration Card Number:</label>
-                <input type="text" id="ration-card" name="ration-card" placeholder="Ration Card Number">
-            </div>
-
-            <!-- Aadhaar Card Number -->
-            <div class="form-group">
-                <label for="aadhaar-card">Aadhaar Card Number:</label>
-                <input type="text" id="aadhaar-card" name="aadhaar-card" placeholder="Aadhaar Card Number">
-            </div>
-
-            <!-- Driving License Number -->
-            <div class="form-group">
-                <label for="driving-license">Driving License Number:</label>
-                <input type="text" id="driving-license" name="driving-license" placeholder="Driving License Number">
-            </div>
-
-            <!-- Address -->
-            <div class="form-group">
-                <label for="address">Address:</label>
-                <textarea id="address" name="address" placeholder="Street, City, State, Country" rows="3" required></textarea>
-            </div>
-
-            <!-- Email Address -->
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
-            </div>
-
-            <!-- Phone Number -->
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="form-group">
-                <button type="submit">Submit</button>
-            </div>
-
-        </form>
-    </div>
-
+</p>
+    </section>
+  </div>
 </body>
 </html>
